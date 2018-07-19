@@ -1,0 +1,18 @@
+#wrapper {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    height: 72px;
+    vertical-align: top;
+}
+
+h1 {
+    display: inline-block;
+    margin: 0px 0px 0px 12px;
+}
+
+nav {
+    float: right;
+}

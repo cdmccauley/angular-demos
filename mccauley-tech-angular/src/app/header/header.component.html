@@ -3,38 +3,41 @@
       <a class="logo navbar-brand" href="#"><strong>Navbar</strong></a>
   </mdb-navbar-brand> -->
   <mdb-navbar-brand>
-    <a class="navbar-brand" href="#">
-      <img src="http://mccauley.tech/portfolio-content/icons/72.png" height="30" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" routerLink="" routerLinkActive="active">
+      <img src="{{headerIcon}}" height="30" class="d-inline-block align-top" alt="">
       <strong> mccauley.tech</strong>
     </a>
   </mdb-navbar-brand>
   <links>
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active waves-light" mdbWavesEffect>
-            <a class="nav-link">home <span class="sr-only">(current)</span></a>
+        <li class="nav-item waves-light" mdbWavesEffect>
+            <a routerLink="" routerLinkActive="active" class="nav-link">home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
-            <a class="nav-link">portfolio</a>
+            <!-- <a routerLink="{{portfolioUrl}}" routerLinkActive="active"</a> class="nav-link">portfolio</a> -->
+            <a href="{{portfolioUrl}}" target="_blank" class="nav-link">portfolio</a>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
-            <a class="nav-link">resume</a>
+            <!-- <a routerLink="{{resumeUrl}}" routerLinkActive="active" class="nav-link">resume</a> -->
+            <a href="{{resumeUrl}}" target="_blank" class="nav-link">resume</a>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
-            <a class="nav-link">contact</a>
+            <!-- <a routerLink="{{contactUrl}}" routerLinkActive="active" class="nav-link">contact</a> -->
+            <a href="{{contactUrl}}" target="_blank" class="nav-link">contact</a>
         </li>
       </ul>
       <ul class="navbar-nav nav-flex-icons">
         <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link"><i class="fa fa-codepen"></i></a>
+          <a href="{{codepenUrl}}" class="nav-link" target="_blank"><i class="fa fa-codepen"></i></a>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link"><i class="fa fa-free-code-camp"></i></a>
+          <a href="{{freeCodeCampUrl}}" class="nav-link" target="_blank"><i class="fa fa-free-code-camp"></i></a>
         </li>  
         <li class="nav-item waves-light" mdbWavesEffect>
-            <a class="nav-link"><i class="fa fa-github"></i></a>
+            <a href="{{githubUrl}}" class="nav-link" target="_blank"><i class="fa fa-github"></i></a>
         </li>
         <li class="nav-item waves-light" mdbWavesEffect>
-          <a class="nav-link"><i class="fa fa-linkedin"></i></a>
+          <a href="{{linkedInUrl}}" class="nav-link" target="_blank"><i class="fa fa-linkedin"></i></a>
         </li>
       </ul>
   </links>

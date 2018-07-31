@@ -12,7 +12,9 @@
 
         <!-- Content -->
         <!-- <h5 class="text-uppercase font-weight-bold">mccauley.tech</h5> -->
-        <img class="float-left mr-3" src="http://mccauley.tech/portfolio-content/icons/72.png">
+        <div class="w-25 d-block">
+            <img class="float-left mr-3 w-50" src="{{footerIcon}}">
+        </div>
         <p>Chris lives, works, and studies in the Davis and Salt Lake counties of northern Utah, USA.</p>
 
       </div>
@@ -25,16 +27,16 @@
 
           <ul class="list-unstyled">
             <li>
-              <a href="#!">home</a>
+              <a routerLink="" routerLinkActive="Active">home</a>
             </li>
             <li>
-              <a href="#!">portfolio</a>
+              <a href="{{portfolioUrl}}" target="_blank">portfolio</a>
             </li>
             <li>
-              <a href="#!">resume</a>
+                <a href="{{resumeUrl}}" target="_blank">resume</a>
             </li>
             <li>
-              <a href="#!">contact</a>
+                <a href="{{contactUrl}}" target="_blank">contact</a>
             </li>
           </ul>
 
@@ -47,22 +49,22 @@
           <div class="row pt-4 pb-5">
 
             <div class="col">
-              <a class="codepen-ic">
+              <a href="{{codepenUrl}}" target="_blank" class="codepen-ic">
                 <i class="fa fa-codepen fa-lg white-text fa-2x"> </i>
               </a>
             </div>
             <div class="col d-inline-block">
-              <a class="free-code-camp-ic">
+              <a href="{{freeCodeCampUrl}}" target="_blank" class="free-code-camp-ic">
                 <i class="fa fa-free-code-camp fa-lg white-text fa-2x"> </i>
               </a>
             </div>
             <div class="col d-inline-block">
-              <a class="github-ic">
+              <a href="{{githubUrl}}" target="_blank" class="github-ic">
                 <i class="fa fa-github fa-lg white-text fa-2x"> </i>
               </a>
             </div>
             <div class="col d-inline-block">
-              <a class="linkedin-ic">
+              <a href="{{linkedInUrl}}" target="_blank" class="linkedin-ic">
                 <i class="fa fa-linkedin fa-lg white-text fa-2x"> </i>
               </a>
             </div>
